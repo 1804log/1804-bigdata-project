@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //写cookie key=value
+        document.cookie = "uuid=123"
+        document.cookie = "sid=456"
+        document.cookie = "mid=789"
+        //获取cookie数据
+        // alert(document.cookie)
+        console.log(document.cookie)
+
+        //定义一个对象
+        var studeng = {
+            id: 666,
+            name: "张三",
+            say: function () {
+                alert("咱也不敢说，咱也不敢问")
+            },
+            girlFriend: {name: "唐伯虎"},
+            array: ["点秋香", "分流倜傥"]
+
+        }
+//              //获取对象的值
+//        console.log(studeng.id)
+//        studeng.say()
+//        console.log(studeng.girlFriend.name)
+//        console.log(studeng.array[0])
+
+        //给实例对象动态添加值
+//        studeng.age=12
+//        alert(studeng.age)
+
+        //遍历对象的属性和属性值
+        for (key in studeng){
+            console.log(key+"="+studeng[key])
+        }
+
+    </script>
+</head>
+<body>
+<div id="dv"></div>
+</body>
+</html>
